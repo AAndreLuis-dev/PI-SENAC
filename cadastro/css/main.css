@@ -275,6 +275,11 @@ h6 {
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
 }
 
+.btn a {
+  text-decoration: none;
+  outline: none;
+}
+
 .btn--radius {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

@@ -259,6 +259,11 @@
     color: #fff;
     font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
   }
+
+  .btn a {
+    outline: none;
+    
+  }
   
   .btn--radius {
     -webkit-border-radius: 3px;
@@ -270,6 +275,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    outline: none;
   }
   
   .btn--pill {
@@ -288,6 +294,7 @@
   
   .btn--blue {
     background: #4272d7;
+    outline: none;
   }
   
   .btn--blue:hover {
@@ -639,5 +646,19 @@
     .card-4 .card-body {
       padding: 50px 40px;
     }
+  }
+
+  .Cadastro {
+    font-size: 18px;
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    position: relative;
+  }
+
+ a { 
+    outline: none;
+    text-decoration: none;
   }
   
