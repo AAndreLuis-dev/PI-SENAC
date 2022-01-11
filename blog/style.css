@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #FCF8FC;
+}
+
+a{
+    text-decoration: none;
+    color: #FFC300;
+    
+}
+
+
+
+a:hover{
+    background-color: #fff;
+    color: #FFC300;
+    border-radius: 2px;
+}
+
+.conteudo{
+    position: static;
+    display: block;
+}
+
+#banner{
+    background: #FFC300;
+    padding: 30px;
+    width: auto;
+    height: 120px;
+    position: static;
+    display: block;
+    
+    
+}
+
+.logo{
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.logop1{
+    color: #524948;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.logop2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.menu{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+
+    
+}
+
+.navmenu{
+    padding: 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
+.postagens{
+    width: 700px;
+    padding-top: 30px;
+    position: relative;
+    left: 200px;
+    margin-right: 20px;
+    
+}
+
+.post{
+    background-color: #fff;
+    width: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.imagemIndex{
+    size: 600px;
+    margin: 20px 0px;
+}
+
+.linkpost{
+    color: #FFC300;
+}
+
+.sidenav{
+    padding: 20px;
+    width: 320px;
+    position: absolute;
+    top: 190px;
+    right: 60px;
+}
+
+.sidepost{
+    padding: 20px;
+    background-color: #FFF;
+    margin: 10px;
+}
+
+.titleside{
+    background-color: #DDD9DE;
+    padding: 5px;
+    color: #595A65;
+    margin-bottom: 10px;
+}
+
+.linkside{
+    margin: 10px;
+    display: block;
+}
+
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #838387;
+    width: 900px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: 200px;
+}
+
+.clear{
+    clear: both;
+}
