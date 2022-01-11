@@ -35,7 +35,7 @@ a:hover{
     height: 120px;
     position: static;
     display: block;
-    
+    border-radius: 0px;
     
 }
 
@@ -88,6 +88,11 @@ a:hover{
     
 }
 
+h2 > p{
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
 .post{
     background-color: #fff;
     width: auto;
@@ -101,7 +106,7 @@ a:hover{
 }
 
 .linkpost{
-    color: #FFC300;
+    color: #4267b2;
 }
 
 .sidenav{
@@ -110,6 +115,10 @@ a:hover{
     position: absolute;
     top: 190px;
     right: 60px;
+}
+
+h3 ~ p{
+    margin: 10px 2px;
 }
 
 .sidepost{
