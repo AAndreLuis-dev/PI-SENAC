@@ -208,6 +208,21 @@ h6 {
   padding-top: 15px;
 }
 
+.login{
+  font-size: 18px;
+  color: #fff;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  text-align: center;
+  display: block;
+  position: relative;
+  bottom: 2.5em;
+
+}
+
+.login a{
+  text-decoration: none;
+}
+
 .p-t-10 {
   padding-top: 10px;
 }
@@ -639,4 +654,8 @@ input {
   .card-4 .card-body {
     padding: 50px 40px;
   }
+}
+
+a{
+  text-decoration: none;
 }
