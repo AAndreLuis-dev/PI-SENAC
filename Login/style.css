@@ -644,10 +644,11 @@
   .Cadastro {
     font-size: 18px;
     color: #ffff;
+    font-family: "Poppins","Arial";
     text-align: center;
-    justify-content: center;
     display: block;
     position: relative;
+ 
   }
 
  a { 
