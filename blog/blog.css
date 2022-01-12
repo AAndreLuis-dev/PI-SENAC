@@ -88,9 +88,14 @@ a:hover{
     
 }
 
-h2 > p{
+h2 + p{
     margin: 10px 0px;
-    padding: 10px 0px;
+    top: 4px;
+    font-size: 0.8em;
+}
+
+h2{
+    font-weight: 700;
 }
 
 .post{
@@ -101,7 +106,7 @@ h2 > p{
 }
 
 .imagemIndex{
-    size: 600px;
+    width: 600px;
     margin: 20px 0px;
 }
 
@@ -119,6 +124,7 @@ h2 > p{
 
 h3 ~ p{
     margin: 10px 2px;
+    padding: 5px;
 }
 
 .sidepost{
