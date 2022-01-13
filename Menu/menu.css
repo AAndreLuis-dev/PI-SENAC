@@ -109,25 +109,46 @@ div.options a{
 div.options h3{
     margin-left: 10px;
     padding: 5px 0px;
-    margin-top: 4px solid #ccc;
+    margin-bottom: 4px solid #ccc;
     position: relative;
 
 }
 
 h3{
-    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 div.option p{
-    position: relative;
+    position: static;
+    display: block;
     text-align: justify;
+    padding-top: 20px;
 }
 
 p + a{
+    position: static;
+    display: block;
+    text-align: justify;
+    bottom: 0px;
+    margin: 0px;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
     position: relative;
     display: block;
+    margin: 10px 0px 0px 0px;
     text-align: center;
-    bottom: 0px;
+    background-color: #4267b2;
+    top: 30px;
+}
+
+a > p{
+    color: #fff;
+    position: relative;
+    bottom: 10px;
 }
 
 
