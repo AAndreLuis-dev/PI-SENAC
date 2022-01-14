@@ -139,10 +139,17 @@ button{
     border-radius: 3px;
     position: relative;
     display: block;
-    margin: 10px 0px 0px 0px;
     text-align: center;
     background-color: #4267b2;
     top: 30px;
+    float: inline-start;
+
+}
+
+.butaoalterar{
+    position: relative;
+    bottom: 20px;
+    margin: 0;
 }
 
 a > p{
