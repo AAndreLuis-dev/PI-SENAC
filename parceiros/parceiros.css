@@ -27,7 +27,7 @@ body {
     color: white;
  
 }
-.logo {
+.logo1 {
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -164,4 +164,10 @@ div.contfinal p{
 
 div.contfinal a{
     color: #fff;
+}
+
+h4 {
+    padding: 10px;
+    color: #fff;
+    font-size: 2em;
 }
