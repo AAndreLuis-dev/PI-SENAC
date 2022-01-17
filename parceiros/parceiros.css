@@ -9,6 +9,13 @@ body {
 
 }
 
+a:hover{
+    background-color: #fff;
+    color: #4267b2;
+    border-radius: 2px;
+}
+
+
 .painel {
     background: #4267b2;
     height: 120px;
