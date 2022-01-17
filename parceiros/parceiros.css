@@ -29,11 +29,13 @@ body {
 }
 .logo {
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .logo2 {
     margin-left:10px;
     font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .caixa {
@@ -128,4 +130,38 @@ iframe {
     text-decoration: none;
     color: #fff;
     
+}
+
+
+
+.final{
+    background: #4267b2;
+    padding: 30px;
+    width: auto;
+    height: 13em;
+    margin-top: 65%;
+    position: static;
+    display: block;
+    border-top: 5px solid red;
+        
+}
+
+.contfinal{
+    width: 400px;
+    float: left;
+    margin: 20px;
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+div.contfinal p{
+    text-align: justify;
+    padding: 5px;
+    font-weight: 700;
+}
+
+div.contfinal a{
+    color: #fff;
 }
