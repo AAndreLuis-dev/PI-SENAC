@@ -655,3 +655,7 @@ input {
 a{
   text-decoration: none;
 }
+
+.explicacao{
+  font-size: 0.5em;
+}
