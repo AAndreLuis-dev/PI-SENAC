@@ -192,6 +192,17 @@ a > p{
     height: 2em;
 }
 
+.procurar{
+    width: 20em;
+    height: 2.5em;
+    margin: 2em;
+    color: #fff;
+    background: #4267b2;
+    font-weight: 900;
+    font-size: 0.8em;
+    border-radius: 7px;
+}
+
 
 
 /* ==================================== Rodapé ================================== */
