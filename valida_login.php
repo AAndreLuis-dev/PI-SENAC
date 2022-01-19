@@ -18,20 +18,25 @@ $query = "SELECT id FROM tb_usuarios WHERE email ='{$email}' AND senha = '{$senh
 $result = mysqli_query($conn, $query);
 $row = mysqli_num_rows($result);
 
-$tipos = "SELECT tipo FROM tb_usuarios WHERE email ='{$email}' AND senha = '{$senha}'";
+$tipos = "SELECT tipo FROM tb_usuarios WHERE tipo = 'paciente' AND email ='{$email}'";
 $resultado = mysqli_query($conn, $tipos);
-$verif = "paciente";
+$verf = mysqli_num_rows($resultado);
+
+$tipom = "SELECT tipo FROM tb_usuarios WHERE tipo = 'medico' AND email ='{$email}'";
+$result = mysqli_query($conn, $tipom);
+$verfm = mysqli_num_rows($result);
+
 
 /*if($resultado = 'paciente'){
     echo'resultado correto';
 };*/
 
-if(($row ==1) && ($resultado == 'paciente')){
+if(($row ==1) && ($verf == 1) || ($row ==1) && ($verfm == 1)){
     $email = ['email'];
     $senha = ['senha'];
     header('Location: Menu/menu.html');
 
-} elseif (($row ==1) && ($resultado == 'mod')){
+} elseif (($row ==1) && ($verf == 0) && ($verfm == 0)){
     $email = ['email'];
     $senha = ['senha'];
     header('Location: Menu/painel.html');
