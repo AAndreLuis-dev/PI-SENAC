@@ -32,18 +32,18 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Cadastro moderação!</h2>
-                    <form method="POST">
+                    <form method="POST" action="../inserir.php">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Primeiro nome</label>
-                                    <input class="input--style-4" type="text" name="nome">
+                                    <input class="input--style-4" type="text" name="nome" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Segundo nome</label>
-                                    <input class="input--style-4" type="text" name="sobrenome">
+                                    <input class="input--style-4" type="text" name="sobrenome" required>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                                 <div class="input-group">
                                     <label class="label">Aniversário</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="aniversario">
+                                        <input class="input--style-4 js-datepicker" type="text" name="aniversario" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -62,11 +62,11 @@
                                     <label class="label">Gênero</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Homem
-                                            <input type="radio" checked="checked" name="genero">
+                                            <input type="radio" checked="checked" name="genero" value="homem" required>
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container">Mulher
-                                            <input type="radio" name="genero">
+                                            <input type="radio" checked="checked" name="genero" value="mulher" required> 
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -77,36 +77,36 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input class="input--style-4" type="email" name="email" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Número de telefone</label>
-                                    <input class="input--style-4" type="text" name="tel">
+                                    <input class="input--style-4" type="text" name="tel" required>
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
                             <label class="label">Tipo de cadastro</label>
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="tipocad">
+                                <select name="tipo" required>
                                     <option>----Escolha----</option>
-                                    <option value="medico">Médico</option>
-                                    <option value="paciente">Paciente</option>
-                                    <option value="moderacao">Moderação</option>
+                                    <option>medico</option>
+                                    <option>paciente</option>
+                                    <option>mod</option>
                                 </select>
                                 <div class="col-2" style="margin: 20px 0px;">
                                     <div class="input-group">
                                         <label class="label">Senha</label>
-                                        <input class="input--style-4" type="text" name="senha" style="width: auto;">
+                                        <input class="input--style-4" type="text" name="senha" style="width: auto;" required>
                                     </div>
                                 </div>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
                         <div class="p-t-15">
-                            <input class="btn btn--radius-2 btn--blue" type="submit" name="cadastro"><a href="#"></a></input>
+                            <input class="btn btn--radius-2 btn--blue" type="submit" name="cadastro"></input>
                         </div>
                         <div class="p-t-15">
                             <input type="button" class="btn btn--radius-2 btn--blue" ><a href="../Menu/painel.html"> <span class="login">Painel</span></a></input>

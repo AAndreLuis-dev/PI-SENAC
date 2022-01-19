@@ -37,10 +37,3 @@ mysqli_close($conn);
 </html>
 
 
-
-
-
-
-
-
-?>

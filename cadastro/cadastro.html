@@ -32,7 +32,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Cadastre-se na SUM!</h2>
-                    <form method="POST" action="">
+                    <form method="POST" action="../inserir.php">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -62,11 +62,11 @@
                                     <label class="label">Gênero</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Homem
-                                            <input type="radio" checked="checked" name="genero">
+                                            <input type="radio" checked="checked" name="genero" value="homem">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container">Mulher
-                                            <input type="radio" name="genero">
+                                            <input type="radio" checked="checked" name="genero" value="mulher">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -90,7 +90,7 @@
                         <div class="input-group">
                             <label class="label">Tipo de cadastro</label>
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="tipocad">
+                                <select name="tipo">
                                     <option disabled="disabled" selected="selected">Escolha uma opção</option>
                                     <option>----Escolha----</option>
                                     <option>medico</option>
