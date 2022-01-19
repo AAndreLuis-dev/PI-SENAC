@@ -49,40 +49,40 @@
 
         <div class="formulario">
 
-            <form action="marcosconsulta.php">
+            <form method="POST" action="marcosconsulta.php">
                 
                 <div class="entrada">
                     <h2> Nome: </h2>
-                    <input type="text" name="nome">
+                    <input type="text" name="nome" required>
                 </div>
 
                 <div class="entrada">
                     <h2>Email</h2>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </div>
 
                 <div class="entrada">
                     <h2>Sexo</h2>
                     <div class="escolha">
-                        <input type="radio" name="Sexo" value="masculino"> Masculino <br>
-                        <input type="radio" name="Sexo" value="femino"> Feminino <br>
+                        <input type="radio" name="Sexo" value="masculino" required> Masculino <br>
+                        <input type="radio" name="Sexo" value="femino" required> Feminino <br>
                     </div>
                 </div>
 
                 <div class="entrada">
                     <h2>Telefone</h2>
                     <p>(ddd) 00000-0000</p>
-                    <input type="text" name="tel">
+                    <input type="text" name="tel" required> 
                 </div>
 
                 <div class="entrada">
                     <h2>CPF</h2>
-                    <input type="text" name="cpf">
+                    <input type="text" name="cpf" required>
                 </div>
 
                 <div class="entrada">
                     <h2>Data do agendamento</h2>
-                    <input type="date" name="dia">
+                    <input type="date" name="dia" required>
                 </div>
 
                 <div class="submit_btn_outer">
