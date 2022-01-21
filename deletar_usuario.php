@@ -1,23 +1,26 @@
 <?php
 
-
-include('conexao_consultas.php');
+include('conexao.php');
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$sexo = $_POST['sexo'];
-$tel = $_POST['tel'];
-$cpf = $_POST['cpf'];
-$dia = $_POST['dia'];
-$doutor = 'Roberto Carlos';
+$senha = $_POST['senha'];
+$senhasudo = '9999';
 
-$sql = "INSERT INTO tb_consultas (nome, email, sexo, tel, cpf, dia, doutor)
-values ('{$nome}', '{$email}', '{$sexo}', '{$tel}', '{$cpf}', '{$dia}',
-'{$doutor}')";
+if(empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['senha']))
+{
+    header('location: adm_deletar-usuarios/deletar_usuarios.html');
+}
 
-mysqli_query($conn,$sql) or die ("Erro ao tentar cadastrar registro");
+$delet = "DELETE FROM tb_usuarios WHERE nome = '$nome' AND email = '$email';";
 
-mysqli_close($conn);
+if($senha == '9999'){
+    $delet = "DELETE FROM tb_usuarios WHERE nome = '$nome' AND email = '$email';";
+    mysqli_query($conn, $delet) or die("Erro ao tentar apagar o registro");
+    mysqli_close($conn);
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,8 +29,8 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUM || Consulta marcada!</title>
-    <link rel="stylesheet" href="marcarconsulta.css">
+    <title>SUM || Uusario deletado</title>
+    <link rel="stylesheet" href="adm_deletar-usuarios/deleteconcluido.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -37,16 +40,15 @@ mysqli_close($conn);
     <div id="banner">
 
         <div class="logo">
-            <h1><span class="logop1">Sistema de União Médica</span><span class="logop2">Consulta marcada</span></h1>
+            <h1><span class="logop1">Sistema de União Médica</span><span class="logop2">Usuário deletado</span></h1>
         </div>
 
         <div class="menu">
             
-            <a href="../index/index.html" class="navmenu">Home</a>
-            <a href="../Login/login.html" class="navmenu">Login</a>
-            <a href="../Menu/painel.html" class="navmenu">Painel</a>
-            <a href="../blog/blog.html" class="navmenu">Blog</a>
-            <a href="doutores.html" class="navmenu">Doutores</a>
+            <a href="index/index.html" class="navmenu">Home</a>
+            <a href="Login/login.html" class="navmenu">Login</a>
+            <a href="Menu/painel.html" class="navmenu">Painel</a>
+            <a href="blog/blog.html" class="navmenu">Blog</a>
 
             <h2 class="clear"></h2>
         </div>
@@ -57,10 +59,9 @@ mysqli_close($conn);
 
         <div class="options">
             
-            <h3>Consulta marcada com sucesso!</h3>
+            <h3>Usuário deletado com sucesso!</h3>
 
-            <p>Sua consulta foi marcada com sucesso, parabéns!</p>
-            <p>Fique atento ao seu email nos próximos dias para receber a confirmação digital!</p>
+            <p>Você deletou, com exito, o usuario selecionado! </p>
 
             
 

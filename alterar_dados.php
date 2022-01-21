@@ -1,24 +1,23 @@
 <?php
 
-
-include('conexao_consultas.php');
+include('conexao.php');
 
 $nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
+$aniversario = $_POST['aniversario'];
+$genero = $_POST['genero'];
 $email = $_POST['email'];
-$sexo = $_POST['sexo'];
 $tel = $_POST['tel'];
-$cpf = $_POST['cpf'];
-$dia = $_POST['dia'];
-$doutor = 'Roberto Carlos';
+$tipo = $_POST['tipo'];
+$senha = $_POST['senha'];
 
-$sql = "INSERT INTO tb_consultas (nome, email, sexo, tel, cpf, dia, doutor)
-values ('{$nome}', '{$email}', '{$sexo}', '{$tel}', '{$cpf}', '{$dia}',
-'{$doutor}')";
 
-mysqli_query($conn,$sql) or die ("Erro ao tentar cadastrar registro");
+$sql = "UPDATE tb_usuarios SET nome = '$nome', sobrenome = '$sobrenome', aniversario = '$aniversario', genero = '$genero', tel = '$tel', tipo = '$tipo', senha = '$senha' where email = '$email'";
 
+mysqli_query($conn, $sql) or die("Erro ao tentar modificar o registro");
 mysqli_close($conn);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,8 +25,8 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUM || Consulta marcada!</title>
-    <link rel="stylesheet" href="marcarconsulta.css">
+    <title>SUM || Alterar informações</title>
+    <link rel="stylesheet" href="alterardados.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -37,33 +36,18 @@ mysqli_close($conn);
     <div id="banner">
 
         <div class="logo">
-            <h1><span class="logop1">Sistema de União Médica</span><span class="logop2">Consulta marcada</span></h1>
+            <h1><span class="logop1">Sistema de União Médica</span><span class="logop2">Alteração do Cadastro</span></h1>
         </div>
-
-        <div class="menu">
-            
-            <a href="../index/index.html" class="navmenu">Home</a>
-            <a href="../Login/login.html" class="navmenu">Login</a>
-            <a href="../Menu/painel.html" class="navmenu">Painel</a>
-            <a href="../blog/blog.html" class="navmenu">Blog</a>
-            <a href="doutores.html" class="navmenu">Doutores</a>
-
-            <h2 class="clear"></h2>
-        </div>
-
     </div>
 
     <div class="conteudo">
 
         <div class="options">
             
-            <h3>Consulta marcada com sucesso!</h3>
+            <h3>Alteração Realizada com Sucesso!</h3>
 
-            <p>Sua consulta foi marcada com sucesso, parabéns!</p>
-            <p>Fique atento ao seu email nos próximos dias para receber a confirmação digital!</p>
-
-            
-
+            <p>Muito bem! Você possuiu exito ao alterar suas informações na SUM!</p>
+            <p><a href="Login/login.html">Por favor, volte ao login!</a></p>
         </div>
 
         <div class="clear"></div>

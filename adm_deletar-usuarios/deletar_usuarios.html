@@ -33,12 +33,12 @@
                 <div class="card-body">
                     <h2 class="title">Deletar usuários</h2>
                     <span>Painel de administrador para deletar usuários</span>
-                    <form method="POST">
+                    <form method="POST" action="../deletar_usuario.php">
                         <div class="row row-space">                            
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Usuário</label>
-                                        <input class="input--style-4" type="text" name="email" required>
+                                        <input class="input--style-4" type="text" name="nome" required>
                                     </div>
                                 </div>
                                 <div class="col-2">
@@ -57,8 +57,10 @@
                             
                             <div class="p-t-15"> <!--DELETAR-->
                                
-                                <input class="btn btn--radius-2 btn--blue" type="button"> <a href="https://YouTube.com"> <span class="Cadastro">Deletar</span></a></input>
+                                <input class="btn btn--radius-2 btn--blue" type="submit"></input>
                             </div>
+                            <br>
+                            
 
                             <div class="p-t-15">
                                 <input class="btn btn--radius-2 btn--blue" type="button"> <a href="../Menu/painel.html"><span class="Cadastro">Painel</span></a></input>

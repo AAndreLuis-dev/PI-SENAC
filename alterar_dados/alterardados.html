@@ -31,19 +31,19 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title">Altere seus dados! <br> <span class="explicacao">Caso deseje manter algo, repita com a mesma informação anterior.</span> </h2>
-                    <form method="POST" action="">
+                    <h2 class="title">Altere seus dados! <br> <span class="explicacao">Caso deseje manter algo, repita com a mesma informação anterior (emails não podem ser alterados).</span> </h2>
+                    <form method="POST" action="../alterar_dados.php">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Primeiro nome</label>
-                                    <input class="input--style-4" type="text" name="nome">
+                                    <input class="input--style-4" type="text" name="nome" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Segundo nome</label>
-                                    <input class="input--style-4" type="text" name="sobrenome">
+                                    <input class="input--style-4" type="text" name="sobrenome" required>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                                 <div class="input-group">
                                     <label class="label">Aniversário</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="aniversario">
+                                        <input class="input--style-4 js-datepicker" type="text" name="aniversario" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -62,11 +62,11 @@
                                     <label class="label">Gênero</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Homem
-                                            <input type="radio" checked="checked" name="genero">
+                                            <input type="radio" checked="checked" name="genero" value="homem">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container">Mulher
-                                            <input type="radio" name="genero">
+                                            <input type="radio" name="genero" value="mulher">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -77,20 +77,20 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input class="input--style-4" type="email" name="email" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Número de telefone</label>
-                                    <input class="input--style-4" type="text" name="tel">
+                                    <input class="input--style-4" type="text" name="tel" required>
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
                             <label class="label">Tipo de cadastro</label>
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="tipocad">
+                                <select name="tipo" required>
                                     <option disabled="disabled" selected="selected">Escolha uma opção</option>
                                     <option>----Escolha----</option>
                                     <option>Médico</option>
@@ -99,7 +99,7 @@
                                 <div class="col-2" style="margin: 20px 0px;">
                                     <div class="input-group">
                                         <label class="label">Senha</label>
-                                        <input class="input--style-4" type="text" name="senha" style="width: auto;">
+                                        <input class="input--style-4" type="text" name="senha" style="width: auto;" required>
                                     </div>
                                 </div>
                                 <div class="select-dropdown"></div>
