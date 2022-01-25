@@ -42,9 +42,9 @@ mysqli_close($conn);
 
         <div class="menu">
             
-            <a href="../index/index.html" class="navmenu">Home</a>
+           <a href="../index.html" class="navmenu">Home</a>
             <a href="../Login/login.html" class="navmenu">Login</a>
-            <a href="../Menu/painel.html" class="navmenu">Painel</a>
+            <a href="../Menu/menu.html" class="navmenu">Painel</a>
             <a href="../blog/blog.html" class="navmenu">Blog</a>
             <a href="doutores.html" class="navmenu">Doutores</a>
 

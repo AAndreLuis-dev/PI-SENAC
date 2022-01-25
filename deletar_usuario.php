@@ -29,7 +29,7 @@ if($senha == '9999'){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUM || Uusario deletado</title>
+    <title>SUM || Usario deletado</title>
     <link rel="stylesheet" href="adm_deletar-usuarios/deleteconcluido.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@ if($senha == '9999'){
 
         <div class="menu">
             
-            <a href="index/index.html" class="navmenu">Home</a>
+            <a href="index.html" class="navmenu">Home</a>
             <a href="Login/login.html" class="navmenu">Login</a>
             <a href="Menu/painel.html" class="navmenu">Painel</a>
             <a href="blog/blog.html" class="navmenu">Blog</a>

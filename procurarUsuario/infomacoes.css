@@ -8,6 +8,7 @@
 
 body{
     background-color: rgba(230, 224, 224, 0.699);
+    align-items: center;
     
 }
 
@@ -201,6 +202,15 @@ a > p{
     font-weight: 900;
     font-size: 0.8em;
     border-radius: 7px;
+}
+
+h2{
+    padding: 20px;
+    float: inline-start;
+    position: relative;
+    width: 300px;
+    top: 200px;
+    color: #0353e9;
 }
 
 
